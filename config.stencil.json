@@ -1,0 +1,15 @@
+{
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {
+      "customer-services-terms.html": "/customer-service/",
+      "about-richmond-supply.html": "/about-richmond-industrial-supply/",
+      "industrial-services-we-offer.html": "/industrial-services-repairs-maintenance/",
+      "national-affiliations.html": "/national-affiliations-200-mro-members/"    
+    },
+    "product": {}
+  },
+  "normalStoreUrl": "https://richmond-supply-company.mybigcommerce.com/",
+  "port": 3000
+}

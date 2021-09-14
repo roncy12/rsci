@@ -1,0 +1,1 @@
+{"components/custom/instagram-feed":"{{#if theme_settings.enable_instagram_feed '===' true}}\n<section class=\"content\">\n    <h2 class=\"container-header instagram-header\"><span>{{lang 'social-feed.latest_instagram'}}</span></h2>\n    <div id=\"instafeed\" class=\"instagramFeed postColumns--{{theme_settings.instagram_columns_count}}\"></div>\n</section>\n{{/if}}  \n"}
