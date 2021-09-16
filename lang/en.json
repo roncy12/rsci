@@ -750,7 +750,7 @@
     "popup_input_placeholder_text": "Email Address *"
   },
   "social": {
-    "connect": "Follow Us"
+    "connect": "Connect With Us"
   },
   "errors": {
     "shipping_quote_failure": "There was a problem retrieving your shipping quote",

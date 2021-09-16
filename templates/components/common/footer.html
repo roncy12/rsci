@@ -35,12 +35,133 @@
 
     <div class="container">
         <section class="footer-info">
-         <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">
+          <!-- NEW FOOTER  -->
+          <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+            <h5 class="footer-info-heading">Customer Support</h5>
+            <div class="regular">
+            <ul class="footer-info-list">
+               
+                <li>
+                    <a href="#">Orders and Returns</a>
+                </li>
+                <li>
+                  <a href="#">Customer Services and Terms </a>
+                </li>
+                
+            </ul>
+            </div>
+
+            <h5 class="footer-info-heading">Contact Us</h5>
+            <div class="regular">
+            <ul class="footer-info-list">
+               
+                <li>
+                  <img src="{{cdn '/img/home/envelope.png'}}" data-sizes="auto" />  
+                  <a href="#">sales@rsci.com</a>
+                </li>
+                <li>
+                  <img src="{{cdn '/img/home/telephone.png'}}" data-sizes="auto" />
+                  <a href="#">(800) 282-8556</a>
+                </li>
+                
+            </ul>
+            </div>
+
+            <div class="global-region container-width">
+              {{{region name="footer_below_quick_links--global"}}} <!-- can be used for SSL Certificate Seal -->
+            </div>
+        </article>
+
+        <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+          <h5 class="footer-info-heading">About Richmond Supply, Inc.</h5>
+          <div class="regular">
+          <ul class="footer-info-list">
+             
+              <li>
+                  <a href="#">For over three generations Richmond Supply has been selling and servicing industrial components and supplies.</a>
+              </li>
+              <li>
+                <a href="#">National MRO Affiliations</a>
+              </li>
+              <li>
+                <a href="#">Industrial Supply Blog</a>
+              </li>
+              
+          </ul>
+          </div>
+        </article>
+
+        <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+          <h5 class="footer-info-heading">Industrial Repairs and Services</h5>
+          <div class="regular">
+          <ul class="footer-info-list">
+             
+              <li>
+                  <a href="#">Delivery</a>
+              </li>
+              <li>
+                <a href="#">Stocked Inventory</a>
+              </li>
+              <li>
+                <a href="#">Technical Support</a>
+              </li>
+              <li>
+                <a href="#">Hose Coupling, Fabrication, Cleaning and Testing</a>
+              </li>
+              <li>
+                <a href="#">Hard-To-Find Parts Search</a>
+              </li>
+              <li>
+                <a href="#">Price Quotes</a>
+              </li>
+              <li>
+                <a href="#">Converyor Belting Services</a>
+              </li>
+              <li>
+                <a href="#">Paint and Coating Specialists</a>
+              </li>
+          </ul>
+          </div>
+        </article>
+        <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+          {{#if settings.show_newsletter_box}}
+            <div class="footer-top newsletter">
+                <div class="content newsletter">
+                    <div class="" data-section-type="newsletterSubscription">
+                            {{> components/common/subscription-form}}
+                            <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+           {{/if}}
+
+
+              <h5 class="footer-info-heading">Connect With Us</h5>
+              <div class="regular">
+              <ul class="footer-info-list">
+                  
+                  <li>
+                      <a><img src="{{cdn '../img/home/Twitter.png'}} " alt="twitter"></a>
+                      <a><img src="{{cdn '../img/home/Facebook.png'}} " alt="facebook"></a>
+                      <a><img src="{{cdn '../img/home/google.png'}} " alt="google"></a>
+                      <a><img src="{{cdn '../img/home/pinterest.png'}} " alt="pinterest"></a>
+                      <a><img src="{{cdn '../img/home/linkedin.png'}} " alt="linkedin"></a>
+                  </li>                
+              </ul>
+              </div>
+            <div class="global-region container-width"> 	<!-- can be used for SSL Certificate Seal -->
+              {{{region name="footer_below_social_links--global"}}}
+            </div>
+
+        </article>
+
+        <!-- END OF NEW FOOTER -->
+
+         <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo" style="display: none;">
                 <h5 class="footer-info-heading">{{lang 'footer-headers.contact'}}</h5>
                 <div class="regular">
                     <address>{{nl2br settings.address}}</address>
-                    <li><a>sales@rsci.com</a></li>
-                    <li><a>(800) 282-8556</a></li>
                 </div>
                 
                 <div class="global-region container-width"> <!-- can be used for SSL Certificate Seal -->
@@ -48,7 +169,7 @@
 								</div>
         </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages"  style="display: none;">
                 <h5 class="footer-info-heading">{{lang 'footer-headers.accounts'}}</h5>
                 <div class="regular">
                 <ul class="footer-info-list">
@@ -96,7 +217,7 @@
 								</div>
             </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories" style="display: none;">
                 <h5 class="footer-info-heading">{{lang 'footer-headers.important-links'}}</h5>
                 <div class="regular">
                 <ul class="footer-info-list">
@@ -113,7 +234,7 @@
 								</div>
             </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories" style="display: none;">
 
 							<!-- {{#if settings.blog_enabled}}
                 <h5 class="footer-info-heading recent-posts-heading">{{lang 'footer-headers.recent-blogs'}}</h5>
