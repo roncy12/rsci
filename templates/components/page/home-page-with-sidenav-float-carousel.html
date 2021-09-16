@@ -28,11 +28,23 @@
       {{> components/common/alert-info message}}
   {{/each}}
 
+  <!-- GRID IMAGES -->
+    {{> components/custom/home-grid-images}}
+  <!-- END OF GRID IMAGES SECTION -->
+  
   <!-- BEGIN FEATURED CUSTOM BANNERS -->
     {{#if theme_settings.show_homepage_featured_banners '===' true}}
       {{> components/custom/home-featured-banners}}
     {{/if}}
   <!-- END FEATURED CUSTOM BANNERS -->
+
+  {{#if products.featured}}
+  {{> components/custom/home-featured-banners products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+{{/if}}
+
+ 
+  
+
 
   <div id="showcase-products" class="featured-products-section">
     {{{region name="home_below_featured_banners"}}}
@@ -52,6 +64,17 @@
      {{> components/custom/featured-in-tabs-no-carousels}}
     {{/if}}
 
+     <!-- CUSTOMER SERVICES SECTION -->
+     {{> components/custom/home-customer-service}}
+     <!-- END OF CUSTOMER SERVICES SECTION -->
+
+
+          <!-- CUSTOMER SERVICES SECTION -->
+          {{> components/custom/home-featured-product}}
+          <!-- END OF CUSTOMER SERVICES SECTION -->
+
+
+
         <div class="clear"></div>
 
         <!-- NEWS/BLOG FEED -->
@@ -61,7 +84,9 @@
 
         {{{region name="home_below_blog_feed"}}}
 
+
         <!-- BRANDS FEED -->
+
         {{#if theme_settings.brands_slider_visibility '===' 'visible'}}
           {{> components/custom/brands-feed}}
         {{/if}}
@@ -82,27 +107,4 @@
 <div class="clear"></div>
 
 </div> <!-- main full home -->
-
-    <div class="footer-locations" style="display: none;">
-      <div class="contents">
-          <div>
-            <h4><b>Main Branch</b></h4>
-            <p>601 Laney-Walkey Blvd, Augusta,
-               <br/> GA 30901 </p>
-              <a href="#">Get Directions</a>
-          </div>
-          <div> 
-            <h4><b>SAVANNAH, GA</b></h4>
-            <p>117 Park of Commerce Dr<br>
-              Savannah, GA-31405-1456 </p>
-              <a href="#">Get Directions</a>
-          </div>
-          <div>
-            <h4><b>FLORENCE, SC</b></h4>
-            <p>2325 Prosperity Way, <br/>
-              Florence, SC 29501 </p>
-              <a href="#">Get Directions</a>
-          </div>
-      </div>
-    </div>
 </div>

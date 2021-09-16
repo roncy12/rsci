@@ -1,0 +1,36 @@
+<div id="slick-brand" style="display: none;">
+	
+    <div class="brand-item ">
+        <a href="/Porsche_c_8635.html" target="_blank"> <img src="{{cdn 'img/home/3m.png' }}" /> </a>
+    </div>
+    <div class="brand-item ">
+        <a href="/BMW_c_8746.html" target="_blank"> <img src="{{cdn 'img/home/4b.png' }}" /> </a>
+    </div>
+    <div class="brand-item ">
+        <a href="/Volvo_c_8738.html" target="_blank"> <img src="{{cdn 'img/home/84-lumber.png' }}" /> </a>
+    </div>
+    <div class="brand-item ">
+        <a href="/Audi_c_8730.html" target="_blank"> <img src="{{cdn 'img/home/abeymetric.png' }}" /> </a>
+    </div>
+    <div class="brand-item ">
+        <a href="/Jaguar_c_8770.html" target="_blank"> <img src="{{cdn 'img/home/absolute-coatings.png' }}" /> </a>
+    </div>
+    <div class="brand-item ">
+        <a href="/Volkswagen_c_8754.html" target="_blank"> <img src="{{cdn 'img/home/afl.png'}}" /> </a>
+    </div>	
+    <div class="brand-item ">
+        <a href="/Volkswagen_c_8754.html" target="_blank"> <img src="{{cdn 'img/home/afl.png'}}" /> </a>
+    </div>	
+    
+</div>
+
+<h2 class="page-heading">{{lang 'products.featured' }}</h2>
+
+<ul class="productGrid productGrid--maxCol{{ columns }}" data-product-type="featured" {{#if settings.data_tag_enabled}} data-list-name="Featured Products" {{/if}}>
+    {{#each products}}
+        <li class="product">
+                {{>components/products/card settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+        </li>
+    {{/each}}
+</ul>
+

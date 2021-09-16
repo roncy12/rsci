@@ -5,19 +5,19 @@
   <div class="footer-locations">
     <div class="contents">
         <div>
-          <h4><b>Main Branch</b></h4>
+          <h4>Main Branch</h4>
           <p>601 Laney-Walkey Blvd, Augusta,
              <br/> GA 30901 </p>
             <a href="#">Get Directions</a>
         </div>
         <div>
-          <h4><b>SAVANNAH, GA</b></h4>
+          <h4>SAVANNAH, GA</h4>
           <p>117 Park of Commerce Dr<br>
             Savannah, GA-31405-1456 </p>
             <a href="#">Get Directions</a>
         </div>
         <div>
-          <h4><b>FLORENCE, SC</b></h4>
+          <h4>FLORENCE, SC</h4>
           <p>2325 Prosperity Way, <br/>
             Florence, SC 29501 </p>
             <a href="#">Get Directions</a>
@@ -39,8 +39,10 @@
                 <h5 class="footer-info-heading">{{lang 'footer-headers.contact'}}</h5>
                 <div class="regular">
                     <address>{{nl2br settings.address}}</address>
+                    <li><a>sales@rsci.com</a></li>
+                    <li><a>(800) 282-8556</a></li>
                 </div>
-
+                
                 <div class="global-region container-width"> <!-- can be used for SSL Certificate Seal -->
 									{{{region name="footer_below_contact--global"}}}
 								</div>
@@ -171,13 +173,13 @@
           <div class="left">
             <ul class="site-info">
                 {{#if theme_settings.show_copyright_footer}}
-                        <li class="copyright"><span class="current-year">&copy; <span id="copyright_year"></span> {{settings.store_name}}</span></li>
+                        <li class="copyright"><span class="current-year">&copy; <span id="copyright_year"></span> {{settings.store_name}} All Rights Reserved.</span></li>
                 {{/if}}
                 {{#if theme_settings.show_sitemap_link}}
-                        <li class="sitemap"><a href="{{urls.sitemap}}"> | {{lang 'sitemap.page_title'}}</a></li>
+                        <li class="sitemap" style="display: none;"> <a href="{{urls.sitemap}}"> | {{lang 'sitemap.page_title'}}</a></li>
                 {{/if}}
                         {{#if theme_settings.show_powered_by}}
-                          <li class="built-by"> | Premium <a target="_blank" href="https://www.bigcommerce.com/">BigCommerce</a> Theme by <a class="lone-star-templates" target="_blank" href="http://lonestartemplates.com/">Lone Star Templates</a></li>
+                          <li class="built-by" style="display: none;"> | Premium <a target="_blank" href="https://www.bigcommerce.com/">BigCommerce</a> Theme by <a class="lone-star-templates" target="_blank" href="http://lonestartemplates.com/">Lone Star Templates</a></li>
                         {{/if}}
                         <div class="clear"></div>
               </ul>
@@ -2945,3 +2947,23 @@ $(document).ready(function() {
        });
     });
 </script>
+
+
+<script>
+	var slick_data= {
+        "dots": false,
+        "arrows": true,
+        "mobileFirst": true,
+        "slidesToShow": 6,
+        "slidesToScroll": 6,
+        "rows":1,
+	   "autoplaySpeed": 4000,
+        "autoplay": true,
+       "infinite": true,
+   
+  
+    };
+	
+	jQuery('#slick-brand').not('.slick-initialized').slick(slick_data);
+	
+	</script>
