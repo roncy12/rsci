@@ -707,6 +707,7 @@ body.content {
 
 .header-container {
 	background-color: stencilColor("header-bgColor");
+
 }
 
 header.header {
@@ -15131,7 +15132,7 @@ body.main.home.eleven-seventy.slider-full-width-in-container .body.content {
 }
 
 div#menu.navPages-container.inside-header {
-	background-color: stencilColor("header-bgColor") !important;
+	// background-color: stencilColor("header-bgColor") !important;
 }
 
 footer h2.container-header.instagram-header {
@@ -17951,6 +17952,9 @@ div#side-categories.alternate .flyout.second-level a.navPages-action.paginator.p
 .main-nav-container.full-width.fixed-ready {
   top: 0px;
 	min-height: 43px;
+	background-image: url("/assets/img/home/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .right-align-container.sticky {

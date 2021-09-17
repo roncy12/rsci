@@ -1,0 +1,6 @@
+<div class="standard-grid no-tabs-in-carousels">
+    {{#if products.featured}}
+      <h2 class="page-heading">{{lang 'products.featured' }}</h2>
+               {{> components/products/featured products=products.featured columns=theme_settings.homepage_productGrid_column_count}}
+           {{/if}}
+</div>

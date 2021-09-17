@@ -64,16 +64,7 @@
                    <a href="{{urls.gift_certificate.purchase}}">{{lang 'Gift Certificates'}}</a>
                 </div>
            {{/if}}
-        <div style="display: flex; opacity: 0;">
-            <div class="header-compare">
-                <img data-sizes="auto" src="{{cdn '../assets/img/home/compare.png'}}" />
-                 <h5><b>COMPARE</b></h5>
-             </div>
-             <div class="header-price">
-                <img data-sizes="auto" src="{{cdn '../assets/img/home/price-quote.png'}}" />
-                 <h5><b>PRICE QUOTE</b></h5>
-             </div>
-        </div>
+
 
            {{#if settings.show_wishlist}}
                 <div class="account-link wishlist" style="opacity: 0;">
@@ -123,6 +114,16 @@
             {{/if}}
 
 
+        </div>
+        <div class="right" style="display: flex;opacity: 1;margin-right: -4.5rem;">
+            <div class="header-compare">
+                <img data-sizes="auto" src="{{cdn '../assets/img/home/compare.png'}}" />
+                 <h5>COMPARE</h5>
+             </div>
+             <div class="header-price">
+                <img data-sizes="auto" src="{{cdn '../assets/img/home/price-quote.png'}}" />
+                 <h5>PRICE QUOTE</h5>
+             </div>
         </div>
         <div class="clear"></div>
     </div>
